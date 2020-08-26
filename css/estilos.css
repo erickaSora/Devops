@@ -1,7 +1,10 @@
 ul{
+    width: 10in;
     list-style-type: none;
     background-color:#cc6666;
     overflow: hidden;
+    font-family: 'Indie Flower', cursive;
+
 }
 
 li{
@@ -15,3 +18,35 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
   }
+  .page{
+    display: grid;
+    grid-template-areas: "head head" 
+                         "nav main"
+                         "foot foot" ;
+    grid-template-columns: 100px 1fr  1fr;
+    grid-template-rows: 200px 1fr 300px;
+    grid-gap:5px;
+ }
+ 
+ .head{
+     grid-area:head;
+     background-color: #ff5050;
+ }
+ 
+ .nav{
+     grid-area:nav;
+     background-color: #e8d0d0;
+ }
+ 
+ 
+ .main{
+     grid-area:main;
+     background-color: #e0a8a0;
+ }
+ 
+ .foot{
+     grid-area:foot;
+     background-color:#f2f2f2;
+ }
+ 
+ 
